@@ -20,6 +20,8 @@ spark.cassandra.auth.username            | login name for password authenticatio
 spark.cassandra.auth.password            | password for password authentication              |
 spark.cassandra.auth.conf.factory.class  | name of the class implementing `AuthConfFactory` providing custom authentication | `DefaultAuthConfFactory`
   
+spark.cassandra.connection.timeout_ms                | maximum period of time to attempt connecting to a node        | 5000 ms
+spark.cassandra.read.timeout_ms                      | maximum period of time to wait for a read to return           | 12000 ms
 Example:
 
 ```scala
